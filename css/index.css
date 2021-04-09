@@ -1,0 +1,56 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Bebas Neue', cursive;
+}
+p, a {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.header-extention {
+    height: 100;
+    background-color: red;
+    /* box-sizing: border-box; */
+    color: white;
+    /* display: flex;
+    align-items: center; */
+
+}
+
+/* how to hide underscore of hyperlink on the screen?  */
+.header-menu {
+    background-color: #222323;
+    color: white;
+    font-size: 1.5rem;
+    font-style: bold;
+}
+
+.subheading {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    color: grey;
+}
+.heading {
+    font-size: 3rem;
+    /* line-height: 1.5; */
+    font-size: 7rem;
+    font-weight: 400;
+
+}
+
+.red {
+    color: red;
+}
+
+/* how to make "Shop now" link bigger? */
+
+.button {
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    font-size: 1rem;
+    background-color: red;
+}
