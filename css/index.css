@@ -4,33 +4,50 @@
     padding: 0;
 }
 
+:root {
+    font-family: 'Bebas Neue', sans-serif;
+    scroll-behavior: smooth;
+    --main-color: #222323;
+    --white-color: rgb(255, 255, 255);
+    --red-color: rgb(244, 1, 6);
+    --grey-color: rgba(34, 35, 35, 0.5);
+}
+
 body {
-    font-family: 'Bebas Neue', cursive;
+    max-width: 1170px;
+    margin: auto;
 }
 p, a {
     font-family: 'PT Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 25.2px;
+    /* line-height: 25.2px; */
     text-decoration: none;
     color: inherit;
 }
-
+#burger-checkbox {
+    display: none;
+}
+header .menu {
+    display: none;
+}
 .header-extention {
-    height: 100px;
-    background-color: red;
-    /* box-sizing: border-box; */
-    color: white;
-    display: flex;
-    align-items: center;
-    /* flex-wrap: wrap; */
-    padding: 10px 40px 10px 40px;
+    display: none;
+}
+
+header input:checked ~ .menu  {
+    display: block;
+    /* position: fixed;
+    top: 50px;
+    left: 0;
+    bottom: 0;
+    right: 0; */
+
 }
 .header-menu {
-    background-color: #222323;
-    color: white;
+    background-color: var(--main-color);
+    color: var(--white-color);
     /* font-size: 1.5rem; */
     font-weight: bold;
+    padding: 30px 40px;
 }
 .logo {
     width: 175px;
@@ -43,26 +60,95 @@ p, a {
 }
 .subheading {
     font-family: 'Bebas Neue', cursive;
-    /* font-size: 1.5rem; */
-    color: grey;
+    font-size: 1.5rem;
+    color: var(--grey-color);
 }
 .heading {
     font-size: 3rem;
     /* line-height: 1.5; */
     font-size: 7rem;
     font-weight: 400;
-
+    margin-bottom: 50px;
+}
+.banner-high {
+    background-image: url(../img/banner-photo.jpeg);
+    background-size: hover;
+    min-height: 543px;
+    padding-top: 200px;
+    padding-left: 40px;
+    display: block;
 }
 
+.banner-high a {
+    padding: 20px 30px;
+}
 .red {
-    color: red;
+    color: var(--red-color);
 }
-
-/* how to make "Shop now" link bigger? */
-
 .button {
     font-family: 'PT Sans', sans-serif;
-    color: white;
+    color: var(--white-color);
     font-size: 1rem;
-    background-color: red;
+    background-color: var(--red-color);
+}
+
+
+
+@media (min-width: 480px) {
+
+    .collection-divisions{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+    }
+
+    header .burger-icon {
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+    }
+
+    header .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex: 1;
+    }
+}
+
+@media (min-width: 660px) {
+    .collection-divisions{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 980px) {
+    .header-extention {
+        font-size: 14px;
+        font-weight: 500;
+        background-color: var(--red-color);
+        color: var(--white-color);
+        display: flex;
+        padding: 12px 40px 12px 40px;
+    }
+    .header-extention-text {
+        display: flex;
+        justify-content: space-around;
+        flex: 3;
+    }
+    .header-extention-contacts {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex: 1;
+    }
+    .collection-divisions {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.burger-icon {
+    font-size: 2rem;
 }
