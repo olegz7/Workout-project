@@ -8,9 +8,10 @@
     <title>Workout</title>
     <link rel="icon" href="img/icon.png">
     <script src="https://kit.fontawesome.com/38f945baae.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -25,24 +26,26 @@
             </div>
         </div>
         <div class="header-menu">
-                <nav>
-                    <div class="logo">
-                        <img src="img/workout-logo.jpg" alt="Workout Logo">
-                    </div>
-                    <label class="burger-icon" for="burger-checkbox">☰</label>
-                    <input type="checkbox" id="burger-checkbox">
-                    <div class="menu">
-                        <a href="#about-us">About us</a>
-                        <a href="#sale">Sale</a>
-                        <a href="#collection">Collection</a>
-                        <a href="#blog">Blog</a>
-                        <a href="#contact-us">Contact us</a>
-                    </div>
-                    <div class="social-icons">
-                        <button type="button"><i class="fab fa-facebook-f"></i></button>
-                        <button type="button"><i class="fab fa-instagram"></i></button>
-                        <button type="button"><i class="fab fa-youtube"></i></button>
-                    </div>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container">
+                        <a class="navbar-brand logo" href="#"><img src="img/workout-logo.jpg" alt="Workout Logo"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <div class="menu navbar-nav">
+                                <a class="nav-link active" aria-current="page" href="#about-us">Home</a>
+                                <a class="nav-link" href="#sale">Products</a>
+                                <a class="nav-link" href="#collection">Contacts</a>
+                                <a class="nav-link" href="#blog">Cart</a>
+                                <a class="nav-link" href="#contact-us">Cart</a>
+                            </div>
+                            <div class="social-icons navbar-nav">
+                                <a class="social-icon" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="social-icon" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a class="social-icon" href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
                 </nav>
         </div>
     </header>
