@@ -25,7 +25,10 @@ function prevSlide() {
     showSlide();
 }
 
+
 // setInterval(nextSlide, 5000);
 
 document.querySelector(".carousel-prev").addEventListener("click", prevSlide);
 document.querySelector(".carousel-next").addEventListener("click", nextSlide);
+
+showSlide()
