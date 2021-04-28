@@ -36,7 +36,7 @@
     
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                     <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
@@ -48,11 +48,11 @@
                                     <a class="nav-link active" href="#sale">Sale</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="#collection">Collection</a>
+                                    <a class="nav-link active" href="#new-arrivals">Collection</a>
                                 </li>
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a class="nav-link active" href="#blog">Blog</a>
-                                </li>
+                                </li> -->
                                 <li class="nav-item">
                                     <a class="nav-link active" href="#contact-us">Contact us</a>
                                 </li>
@@ -65,13 +65,13 @@
                                 <li class="nav-item hide-lg">
                                     <p>+1 (234) 567 89 00</p>
                                 </li>
-                                <div class="header-media">
-                                    <a class="social-icon" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                    <a class="social-icon" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                                    <a class="social-icon" href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-                                </div>
                             </ul>
-                            <div>
+                            <div class="header-media">
+                                <a class="social-icon hvr-icon-pulse" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="social-icon" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a class="social-icon" href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                            </div>
+                            <div class="cart-logo">
                                 <a class="nav-link openCartLink" href="#modal-cart" data-bs-toggle="modal">
                                   <i class="fas fa-shopping-cart"></i>
                                     Cart<span id="cart-badge" class="badge bg-dark"></span>
@@ -92,7 +92,7 @@
                     <p class="subheading">ASPIRE TO MORE</p>
                     <h1 class="heading">NEW <span class="red">COLLECTIONS</span>
                         <br>BY TOP BRANDS</h1>
-                    <a href="#shop-now" class="button">Shop now ➪ </a>
+                    <a href="#sale" class="button">Shop now ➪ </a>
                 
         </div>
         <div class="white">
@@ -101,17 +101,17 @@
                     <div class="collection-item-wide">
                         <h2>NEW ARRIVALS</h2>
                         <hr class="hr-short-red" >
-                        <a href="#">Shop Collection ➪</a>
+                        <a href="#sale">Shop Collection ➪</a>
                     </div>
                     <div class="collection-item-trainers">
                         <h2>TRAINERS</h2>
                         <hr class="hr-red">
-                        <a href="#">Shop Collection ➪</a>
+                        <a href="#sale">Shop Collection ➪</a>
                     </div>
                     <div class="collection-item-hot-sale">
                         <h2>HOT SALE</h2>
                         <hr class="hr-red">
-                        <a href="#">Shop Collection ➪</a>
+                        <a href="#sale">Shop Collection ➪</a>
                     </div>
                 </div>
             </div>
@@ -129,22 +129,22 @@
                 <div class="advantage-list">
                     <article class="advantage">
                         <img src="img/free-shipping.svg" alt="Free Shipping">
-                        <h4>Free Shipping Over $90</h2>
+                        <h4>Free Shipping Over $90</h4>
                         <p>Get advantage of our free worldwide shipping on all orders over $90.</p>
                     </article>
                     <article class="advantage">
                         <img src="img/easy-return.svg" alt="Easy Return">
-                        <h4>Easy 30-Day Return</h2>
+                        <h4>Easy 30-Day Return</h4>
                         <p>If the item does not suit you, please send it back to us within 30 days.</p>
                     </article>
                     <article class="advantage">
                         <img src="img/eco-materials.svg" alt="Eco Materials">
-                        <h4>ECO MATERIALS</h2>
+                        <h4>ECO MATERIALS</h4>
                         <p>All items are made with at least 30% recycled materials and zero virgin polyester.</p>
                     </article>
                     <article class="advantage">
                         <img src="img/payment-method.svg" alt="Payment Method">
-                        <h4>20 PAYMENT METHODS</h2>
+                        <h4>20 PAYMENT METHODS</h4>
                         <p>Pay for your orders with credit cards, PayPal, AliPay, and other payment methods.</p>
                     </article>
                 </div>
@@ -152,7 +152,7 @@
             
         </div>
 
-        <div class="about-us">
+        <div id="about-us">
                 <div class="about-us-block">
                     <div class="about-us-img">
                     </div>
@@ -175,7 +175,7 @@
             <div class="video text-left">
                 <p class="subheading">ASPIRE TO MORE</p>
                 <h2 class="heading">NEW FITNESS <br>COLLECTION</h2>
-                <a href="#shop-now" class="button">Shop now ➪</a>
+                <a href="#new-arrivals" class="button">Shop now ➪</a>
             </div>
         </div>
 
@@ -269,19 +269,19 @@
                     <a href="#new-arrivals">More Details ➪</a>
                     <div id="countdown" class="countdown">
                         <div class="time">
-                            <h3 id="days">00</h2>
+                            <h3 id="days">00</h3>
                             <small>Days</small>
                         </div>
                         <div class="time">
-                            <h3 id="hours">00</h2>
+                            <h3 id="hours">00</h3>
                             <small>Hours</small>
                         </div>
                         <div class="time">
-                            <h3 id="minutes">00</h2>
+                            <h3 id="minutes">00</h3>
                             <small>Minutes</small>
                         </div>
                         <div class="time">
-                            <h3 id="seconds">00</h2>
+                            <h3 id="seconds">00</h3>
                             <small>Seconds</small>
                         </div>
                     </div>
@@ -290,49 +290,54 @@
             </div>
         </div>
 
-        <!-- <div id="new-arrivals" class="white">
-            <div>
-                <p>NEW ARRIVALS</p>
-                <hr>
-                <p>Be the first to buy new items by leading brands.</p>
-                <a href="#collection" class="button">More Products</a>
-            </div>
-
-            <div class="new-arrivals-carousel">
-                <div class="new-arrivals-item">
-                    <a href="puma-shoes.html"><img src="img/puma-shoes.jpeg" alt="Puma Textile Running Shoes"></a>
-                    <a href="puma-shoes.html">Puma Textile Running Shoes</a>
-                    <p class="price">$62,00USD</p>
-                    <button type="button">Add to Cart</button>
+        <div id="new-arrivals" class="white">
+            <div class="container-block">
+                <div class="new-arrivals-block"> 
+                    <h2>NEW ARRIVALS</h2>
+                    <hr class="hr-short-grey">
+                    <p>Be the first to buy new items by leading brands.</p>
+                    <a href="#sale">More Products</a>
                 </div>
-                <div class="new-arrivals-item">
-                    <a href="#"><img src="img/nike-jacket.jpeg" alt="Nike Winter Jacket in Blue"></a>
-                    <a href="#">Nike Winter Jacket in Blue</a>
-                    <p class="price">$85,00USD</p>
-                    <button type="button">Add to Cart</button>
-                </div>
-                <div class="new-arrivals-item">
-                    <a href="#"><img src="img/adidas-trainers.jpeg" alt="Adidas Black Trainers"></a>
-                    <a href="#">Adidas Black Trainers</a>
-                    <p class="price">$60,00USD</p>
-                    <button type="button">Add to Cart</button>
-                </div>
-                <div class="new-arrivals-item">
-                    <a href="#"><img src="img/reebok-duster.jpeg" alt="Reebok Red Duster"></a>
-                    <a href="#">Reebok Red Duster</a>
-                    <p class="price">$60,00USD</p>
-                    <button type="button">Add to Cart</button>
-                </div>
-                <div class="new-arrivals-item">
-                    <a href="#"><img src="img/asics-jordan.jpeg" alt="Asics Jordan 2000"></a>
-                    <a href="#">Asics Jordan 2000</a>
-                    <p class="price">$200,00USD</p>
-                    <button type="button">Add to Cart</button>
+                
+                <!-- Need to add new arrival items to products.json -->
+                <!-- <div class="new-arrivals-carousel"></div> -->
+                
+                <div class="new-arrivals-carousel">
+                    <div class="new-arrivals-item">
+                        <a href="#"><img src="img/puma-shoes.jpeg" alt="Puma Textile Running Shoes"></a>
+                        <a href="#">Puma Textile Running Shoes</a>
+                        <p class="price">$62,00USD</p>
+                        <button type="button">Add to Cart</button>
+                    </div>
+                    <div class="new-arrivals-item">
+                        <a href="#"><img src="img/nike-jacket.jpeg" alt="Nike Winter Jacket in Blue"></a>
+                        <a href="#">Nike Winter Jacket in Blue</a>
+                        <p class="price">$85,00USD</p>
+                        <button type="button">Add to Cart</button>
+                    </div>
+                    <div class="new-arrivals-item">
+                        <a href="#"><img src="img/adidas-trainers.jpeg" alt="Adidas Black Trainers"></a>
+                        <a href="#">Adidas Black Trainers</a>
+                        <p class="price">$60,00USD</p>
+                        <button type="button">Add to Cart</button>
+                    </div>
+                    <div class="new-arrivals-item">
+                        <a href="#"><img src="img/reebok-duster.jpeg" alt="Reebok Red Duster"></a>
+                        <a href="#">Reebok Red Duster</a>
+                        <p class="price">$60,00USD</p>
+                        <button type="button">Add to Cart</button>
+                    </div>
+                    <div class="new-arrivals-item">
+                        <a href="#"><img src="img/asics-jordan.jpeg" alt="Asics Jordan 2000"></a>
+                        <a href="#">Asics Jordan 2000</a>
+                        <p class="price">$200,00USD</p>
+                        <button type="button">Add to Cart</button>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div>
+        <!-- <div>
             <div class="text-right">
                 <img src="img/keep-comfort.jpec" alt="KEEP FIT WITH COMFORT">
                 <p class="subheading">100% ORIGINAL BRANDS</p>
@@ -359,33 +364,15 @@
                 </div>
                 <div class="carousel-lg">
                     <div class="carousel-logos">
-                        <img class="logo-1"src="" alt="Carousel image">
-                        <img class="logo-2"src="" alt="Carousel image">
-                        <img class="logo-3"src="" alt="Carousel image">
+                        <img class="logo-1" src="" alt="Carousel image">
+                        <img class="logo-2" src="" alt="Carousel image">
+                        <img class="logo-3" src="" alt="Carousel image">
                     </div>
                     <button class="carousel-prev"><i class="fas fa-arrow-circle-left"></i></button>
                     <button class="carousel-next"><i class="fas fa-arrow-circle-right"></i></button>
                 </div>
             </div>
-
-            <!-- <div class="brands-caorusel">
-                <div class="brand">
-                    <img src="img/nb-logo.svg" alt="New Balance Logo">
-                </div>
-                <div class="brand">
-                    <img src="img/reebok-logo.svg" alt="Reebok Logo">
-                </div>
-                <div class="brand">
-                    <img src="img/adidas-logo.svg" alt="Adidas Logo">
-                </div>
-                <div class="brand">
-                    <img src="img/nike-logo.svg" alt="Nike Logo">
-                </div>
-                <div class="brand">
-                    <img src="img/asics-logo.svg" alt="Asics Balance Logo">
-                </div>
-            </div>
-        </div> -->
+        </div>
 
        <!-- <div class="white">
             <article class="blog">
@@ -406,9 +393,9 @@
                     </label>
                 </form>
             </div>
-        </div> --->
+        </div> -->
     
-        <div class="contact-us">
+        <div id="contact-us">
             <div class="map-container">
                 <div id="map"></div>
             
@@ -443,7 +430,7 @@
                         <hr class="hr-red">
                         <a href="#about-us">About us</a>
                         <a href="#collection">Collection</a>
-                        <a href="#blog">Blog</a>
+                        <!-- <a href="#blog">Blog</a> -->
                         <a href="#contact-us">Contacts</a>
                     </div>
                     <div class="navigation">
@@ -534,7 +521,7 @@
     <div class="alert-container"></div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
+    
     <script src="js/countdown.js"></script>
     <script src="js/products.js"></script>
     <script src="js/carousel-sm.js"></script>
@@ -543,10 +530,12 @@
     async
     ></script>
     <script src="js/map.js"></script>
-
+    
     <script async src="js/alert-window.js"></script>
     <script defer src="js/products-service.js"></script>
     <script defer src="js/cart.js"></script>
-    <script defer src="js/product-list.js"></script>   
+    <script defer src="js/product-list.js"></script>
+
+    <script src="js/index.js"></script>  
 </body>
 </html> 

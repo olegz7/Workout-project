@@ -35,10 +35,6 @@ h2 {
 
 /* --- HEADER --- */
 
-/* --- BURGER --- */
-
-
-
 .header-extention {
   display: none;
 }
@@ -61,11 +57,16 @@ h2 {
   align-items: center;
 }
 
+.navbar-nav a:hover  {
+    color: var(--background-main);
+    transform: scale(1.2);
+}
+
 .header-menu p,
 .header-menu a {
   padding: 10px 0;
   text-align: center;
-  font-size: 12px;
+  color: var(--background-main);
 }
 
 .header-menu .logo {
@@ -73,18 +74,25 @@ h2 {
   padding-top: 20px;
 }
 
-.fab {
+.fab, .fas {
   padding: 0 10px;
   font-size: 20px;
 }
 
 .header-media {
-  padding-top: 20px;
+ 
+  display: flex;
+  justify-content: center;
 }
 
 .media .social-icon {
   padding: 0 15px;
   font-size: 25px;
+}
+
+.fab:hover, .fas:hover {
+    color: var(--background-main);
+    font-size: 25px;
 }
 
 /* --- MAIN --- */
@@ -121,12 +129,20 @@ h2 {
 .red {
   color: var(--h1-span);
 }
+
 .button {
   font-family: "PT Sans", sans-serif;
   color: var(--background-main);
   font-size: 1rem;
   background-color: var(--h1-span);
+  transition-duration: 0.7s;
 }
+
+.button:hover {
+    background-color: var(--background-navigation);
+    color: var(--background-main);
+  }
+
 /* WHITE BLOCK */
 
 .collection-divisions {
@@ -250,7 +266,7 @@ h4 {
 }
 /* ABOUT US */
 
-.about-us {
+#about-us {
   background-color: var(--background-navigation);
   color: var(--background-main);
 }
@@ -405,6 +421,56 @@ small {
   font-family: "PT Sans", sans-serif;
 }
 
+/* NEW ARRIVALS */
+
+.new-arrivals-block {
+    margin: 80px auto 40px auto;
+    text-align:left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .new-arrivals-block p {
+    font-size: 1.3rem;
+    color: var(--subheading);
+    padding: 20px;
+  }
+  .new-arrivals-block a {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: solid 2px;
+    text-align: center;
+  }
+  
+  .new-arrivals-carousel {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+    margin-bottom: 50px;
+  }
+
+  .new-arrivals-item a {
+      display: block;
+      font-size: 1.1rem;
+      color: var(--subheading);
+      padding-top: 20px;
+  }
+  
+  .new-arrivals-item .price {
+    color: var(--h1-span);
+    font-weight: bold;
+    padding: 20px 0;
+    font-size: 1.2rem;
+  }
+  
+  .new-arrivals-item img {
+    height: 400px;
+  }
+
+
 /* //////////////////////////////////// */
 
 /*  CAROUSEL WITH BRANDS */
@@ -444,7 +510,7 @@ small {
 }
 
 .map-contacts {
-    background-color: white;
+    background-color: var(--background-main);
     position: absolute;
     top: 70%;
     left: 30%;
@@ -456,7 +522,7 @@ small {
 }
 
 .map-marker {
-    background-color: white;
+    background-color: var(--background-main);
     position: absolute;
     top: 30%;
     right: 40%;
@@ -578,6 +644,11 @@ hr {
     padding: 12px 40px 12px 40px;
     justify-content: space-between;
   }
+  .header-extention a:hover {
+      color: var(--background-main);
+      text-decoration: underline;
+  }
+
   .header-extention-text {
     flex: 2;
   }
@@ -603,7 +674,8 @@ hr {
   }
 
   .header-media {
-    padding-left: 30px;
+ padding-right: 30px;
+
   }
 
   .media .social-icon {
@@ -696,11 +768,23 @@ hr {
     height: 300px;
   }
 
+
+
   /* COUNTDOWN 980+ */
 
   .deal-of-month-block {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+  }
+
+    /* NEW ARRIVALS */
+  
+  .new-arrivals-carousel {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .new-arrivals-item img {
+    height: 300px;
   }
 
 /* CAROUSEL WITH BRANDS 980+ */
@@ -743,11 +827,6 @@ hr {
   .footer-links {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-
-  /* .carousel-logos .logo-2,
-  .carousel-logos .logo-3 {
-    display: static;
-  } */
 
   /* END OF 980+ MEDIA */
 }
