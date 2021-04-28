@@ -1,0 +1,37 @@
+[
+    {
+        "id": "1",
+        "title": "Adidas Cloudfoam Trainers",
+        "description": "These color block trainers provide breathability, stability, and durability due to Adidas high-tech mesh. Lightweight EVA foam cushioning makes every your step easier.",
+        "image": "sale-adidas-trainers.jpeg",
+        "price": 60.00
+    },
+    {
+        "id": "2",
+        "title": "Reebok Workout Shorts",
+        "description": "These blue shorts are ready for your muscle-burning gym sessions. The lightweight fabric wicks sweat to keep you dry and in comfort.",
+        "image": "sale-reebok-shorts.jpeg",
+        "price": 25.00
+    },
+    {
+        "id": "3",
+        "title": "Puma Fitness Shoes in Grey",
+        "description": "These ultra-lightweight mesh sneakers are great for your fitness workout or regular active lifestyle. The EVA midsole is so comfortable you may want to wear these shoes long after your run has ended.",
+        "image": "sale-puma-shoes.jpeg",
+        "price": 60.00
+    },
+    {
+        "id": "4",
+        "title": "Puma Essential Tank Top",
+        "description": "Run in style and confidence in this Puma tank top. High-tech fabric wicks away sweat to keep you in comfort. Classic black color suits everyone.",
+        "image": "sale-puma-top.jpeg",
+        "price": 43.00
+    },
+    {
+        "id": "5",
+        "title": "Nike Classic Polo T-Shirt",
+        "description": "This polo T-shirt is for those who love sports casual style and wear polo shirts in everyday life. The slightly fitted silhouette will highlight your workout progress.",
+        "image": "sale-nike-t-short.jpeg",
+        "price": 23.00
+    }
+]

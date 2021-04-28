@@ -71,12 +71,19 @@
                                     <a class="social-icon" href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
                                 </div>
                             </ul>
+                            <div>
+                                <a class="nav-link openCartLink" href="#modal-cart" data-bs-toggle="modal">
+                                  <i class="fas fa-shopping-cart"></i>
+                                    Cart<span id="cart-badge" class="badge bg-dark"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </nav>
             </div>
             
         </div>
+
         
     </header>
 
@@ -108,7 +115,6 @@
                     </div>
                 </div>
             </div>
-            
         </div>
 
         <div class="white">
@@ -181,8 +187,11 @@
                         <p>Shop clothes and trainers that are chosen by thousands of our clients. Click on the image to see the product details and click Add to Cart to make the purchase. We are committed to give you the best buying experience!</p>
                 </section>
             </div>
+            <button class="sort-asc btn">Sort Ascending</button>
+            <button class="sort-desc btn">Button Descending</button>
             <div class="container-block">
                 <div class="sale-list"></div>
+                <div class="row products-container"></div>
             </div>
             
         </div>
@@ -277,8 +286,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="deal-of-month-img">
-                </div>
+                <div class="deal-of-month-img"></div>
             </div>
         </div>
 
@@ -344,9 +352,18 @@
 
         <div class="white">
             <div class="container-block">
-                <div class="carousel">
+                <div class="carousel-sm">
                     <button class="carousel-prev"><i class="fas fa-arrow-circle-left"></i></button>
                     <img src="" alt="Carouselimage">
+                    <button class="carousel-next"><i class="fas fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="carousel-lg">
+                    <div class="carousel-logos">
+                        <img class="logo-1"src="" alt="Carousel image">
+                        <img class="logo-2"src="" alt="Carousel image">
+                        <img class="logo-3"src="" alt="Carousel image">
+                    </div>
+                    <button class="carousel-prev"><i class="fas fa-arrow-circle-left"></i></button>
                     <button class="carousel-next"><i class="fas fa-arrow-circle-right"></i></button>
                 </div>
             </div>
@@ -390,20 +407,17 @@
                 </form>
             </div>
         </div> --->
-
+    
         <div class="contact-us">
             <div class="map-container">
-                <div id="map">
-
-                </div>
-                
-                
-                <div class="white">
-                    <p>WORKOUT</p>
+                <div id="map"></div>
+            
+                <div class="map-marker">
+                    <h6>WORKOUT</h6>
                     <p>325 University Ave Newark, NJ 07102</p>
                 </div>
 
-                <div class="white">
+                <div class="map-contacts">
                     <h2>Contacts</h2>
                     <p>
                         325 University Ave <br>
@@ -458,15 +472,81 @@
             </div>   
         </div>
     </footer>
+
+
+    <!-- Modal Product Info -->
+    <div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productInfoLabel">Product Info</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="card-img-top" src="" alt="">
+                <h4 class="card-title"></h4>
+                <p class="card-text"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary buy" data-id="id">Buy</button>
+            </div>
+            </div>
+        </div>
+    </div>
+      
+      <!-- Modal Cart -->
+    <div class="modal fade" id="modal-cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartLabel">Cart</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-product-list-container"></div>
+                <hr>
+                <div class="container">
+                <form class="form-contacts">
+                    <div class="form-group row">
+                    <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                    <input class="form-control col-8" type="text" id="client-name" required>
+                    </div>
+                    <div class="form-group row">
+                    <label for="client-email" class="col-4 col-form-label">Your email:</label>
+                    <input class="form-control col-8" type="email" id="client-email" required>
+                    </div>
+                </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary close-btn" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary order">Order</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert-container"></div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
     <script src="js/countdown.js"></script>
     <script src="js/products.js"></script>
-    
+    <script src="js/carousel-sm.js"></script>
+    <script src="js/carousel-lg.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyrCxNGRyq4mi99LwF2qp0K-cl298uDXY&callback=initMap&libraries=&v=weekly"
     async
     ></script>
     <script src="js/map.js"></script>
+
+    <script async src="js/alert-window.js"></script>
+    <script defer src="js/products-service.js"></script>
+    <script defer src="js/cart.js"></script>
+    <script defer src="js/product-list.js"></script>   
 </body>
 </html> 

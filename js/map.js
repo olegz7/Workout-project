@@ -1,11 +1,10 @@
 function initMap() {
-  const newark = { lat: 40.740, lng: -74.174 };
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 10,
-    center: newark,
+    zoom: 15,
+    center: { lat: 40.740, lng: -74.174 },
   });
   const marker = new google.maps.Marker({
-    position: newark,
+    position: { lat: 40.740, lng: -74.174 },
     map: map,
   });
 }
