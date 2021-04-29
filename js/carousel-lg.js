@@ -35,7 +35,7 @@ function prevSlide() {
 
 // setInterval(nextSlide, 5000);
 
-document.querySelector(".carousel-prev").addEventListener("click", prevSlide);
-document.querySelector(".carousel-next").addEventListener("click", nextSlide);
+document.querySelector(".carousel-lg-prev").addEventListener("click", prevSlide);
+document.querySelector(".carousel-lg-next").addEventListener("click", nextSlide);
 
 showSlide()
