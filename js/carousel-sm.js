@@ -25,7 +25,7 @@ function prevSlide() {
     showSlide();
 }
 
-document.querySelector(".carousel-prev").addEventListener("click", prevSlide);
-document.querySelector(".carousel-next").addEventListener("click", nextSlide);
+document.querySelector(".carousel-sm-prev").addEventListener("click", prevSlide);
+document.querySelector(".carousel-sm-next").addEventListener("click", nextSlide);
 
 showSlide()
