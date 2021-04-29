@@ -1,0 +1,37 @@
+[
+    {
+        "id": "1",
+        "title": "Puma Textile Running Shoes",
+        "description": "With a high-tech foam sole, these sneakers are a great solution for runners. They are ultra-light and do not restrict movement. The turquoise color is their zest.",
+        "image": "puma-shoes.jpeg",
+        "price": 62.99
+    },
+    {
+        "id": "2",
+        "title": "Nike Winter Jacket in Blue",
+        "description": "For those who prefer a sporty style every day, this jacket will be a real discovery. The ultra-modern waterproof fabric will keep you warm and comfortable. And its futuristic design is worth a special mention.",
+        "image": "nike-jacket.jpeg",
+        "price": 85.99
+    },
+    {
+        "id": "3",
+        "title": "Reebok Red Duster",
+        "description": "This long duster is made of lightweight nylon and can be your super stylish attribute both after workouts and in everyday life. This duster won't get wet and will keep you warm on cool autumn or spring days.",
+        "image": "reebok-duster.jpeg",
+        "price": 59.99
+    },
+    {
+        "id": "4",
+        "title": "Adidas Black Trainers",
+        "description": "This classic trainer model is suitable for both fitness sessions and daily wear. This pair of shoes is incredibly comfortable and made of textiles and original leather.",
+        "image": "adidas-trainers.jpeg",
+        "price": 59.99
+    },
+    {
+        "id": "5",
+        "title": "Asics Jordan 2000",
+        "description": "Created to push boundaries, chosen by hundreds of professional sportsmen. This pair of shoes will delight you with the quality of materials, great design, and unique FlyteFoam midsole.",
+        "image": "asics-jordan.jpeg",
+        "price": 199.99
+    }
+]
