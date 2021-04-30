@@ -35,6 +35,17 @@ h2 {
 
 /* --- HEADER --- */
 
+.cart-fixed {
+  color: var(--background-main);
+  position: fixed;
+  top: 170px;
+  right: 20px;
+  border: solid 1px var(--background-navigation);
+  background-color: var(--background-navigation);
+  border-radius: 10px;
+  z-index: 1;
+}
+
 .header-extention {
   display: none;
 }
@@ -528,14 +539,22 @@ small {
 
 .carousel-sm-prev, .carousel-lg-prev {
   position: absolute;
-  top: 60px;
+  top: 20px;
   left: 0;
 }
 
 .carousel-sm-next, .carousel-lg-next {
   position: absolute;
-  top: 60px;
+  top: 20px;
   right: 0;
+}
+
+.carousel-sm button, .carousel-lg button {
+  color: var(--background-main);
+  background-color: var(--background-navigation);
+  padding: 40px 0;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
 }
 
 /* MAP */
