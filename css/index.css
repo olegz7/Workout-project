@@ -362,6 +362,41 @@ button {
   background-color: var(--background-navigation);
   padding: 10px 20px;
   font-family: "PT Sans", sans-serif;
+  margin-right: 30px;
+}
+
+.sort-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-info {
+  background-color: var(--background-main);
+  border: solid 1px var(--background-navigation);
+}
+
+.btn-info:hover {
+  background-color: var(--background-navigation);
+  color: var(--background-main);
+  border: solid 1px var(--background-main);
+  border-radius: 5px;
+}
+
+.buy {
+  background-color: var(--h1-span);
+  border: solid 1px var(--h1-span);
+}
+
+.buy:hover {
+  background-color: var(--background-navigation);
+  color: var(--background-main);
+  border: solid 1px var(--background-main);
+}
+
+.justify-content-around {
+  display: flex;
+  justify-content: center !important;
+  padding-left: 30px;
 }
 
 /* COUNTDOWN */
@@ -491,13 +526,13 @@ small {
   width: 270px;
 }
 
-.carousel-prev {
+.carousel-sm-prev, .carousel-lg-prev {
   position: absolute;
   top: 60px;
   left: 0;
 }
 
-.carousel-next {
+.carousel-sm-next, .carousel-lg-next {
   position: absolute;
   top: 60px;
   right: 0;
@@ -590,6 +625,10 @@ hr {
   display: flex;
   justify-content: space-between;
   padding: 10px 40px;
+}
+
+footer a:hover {
+  color: var(--h1-span);
 }
 
 /* --- RESPONSIVE --- */

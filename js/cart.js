@@ -1,4 +1,4 @@
-class Cart {
+  class Cart {
     constructor() {
       this.productService = new ProductsService();
       this.cartContainer = document.querySelector('#modal-cart');
@@ -141,4 +141,3 @@ class Cart {
       }
     }
   }
-  

@@ -1,4 +1,4 @@
-class ProductList {
+  class ProductList {
     constructor(cart) {
       this.cart = cart;
       this.container = document.querySelector('.products-container');
@@ -29,7 +29,7 @@ class ProductList {
                             data-bs-target="#productInfoModal" data-id="${product.id}">Info
                           </button>
                           <button class="btn btn-primary buy" data-id="${product.id}">
-                            $${product.price} - Buy
+                            $${product.price}
                           </button>
                         </div>
                       </div>
@@ -88,4 +88,3 @@ class ProductList {
       window.showAlert('Product added to cart');
     }
   }
-  
