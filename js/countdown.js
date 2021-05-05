@@ -7,7 +7,7 @@ const countdown = document.getElementById('countdown');
 
 const currentYear = new Date().getFullYear();
 
-const endOfMonth = new Date(`May 01 ${currentYear} 00:00:00`);
+const endOfMonth = new Date(`June 01 ${currentYear} 00:00:00`);
 
 // Update countdown time
 function updateCountdown() {
