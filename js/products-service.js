@@ -5,12 +5,12 @@ class ProductsService {
     }
     async getProducts() {
         if (!this.products) {
-            this.products = await (await fetch('products.json')).json();
+            this.products = await (await fetch("products.json")).json();
         }
         return this.products;
     }
     async getProductById(id) {
         const products = await this.getProducts();
-        return products.find( product => product.id === id );
+        return products.find((product) => product.id === id);
     }
 }

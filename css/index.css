@@ -50,6 +50,28 @@ h2 {
   display: none;
 }
 
+.cart-img {
+  height: 50px;
+  width: auto;
+}
+
+.cart-items {
+  font-family: "PT Sans", sans-serif;
+  color: var(--subheading);
+  align-items: center;
+}
+.cart-symbol {
+  transform: scale(2);
+}
+
+.cart-title {
+  font-size: 14px;
+}
+
+.cart-total {
+  font-family: "PT Sans", sans-serif;
+}
+
 .header-menu {
   background-color: var(--background-navigation);
   color: var(--background-main);
@@ -103,7 +125,7 @@ h2 {
 
 .fab:hover, .fas:hover {
     color: var(--background-main);
-    font-size: 25px;
+    font-size: 23px;
 }
 
 /* --- MAIN --- */
@@ -309,8 +331,7 @@ h4 {
   font-size: 1.2rem;
 }
 
-i.fab {
-  /* background-color: black; */
+i.fab, i.fas {
   color: var(--h1-span);
 }
 
@@ -733,6 +754,10 @@ footer a:hover {
   .nav-item {
     padding-right: 20px;
   }
+
+  .nav-link.active:hover {
+    color: var(--h1-span) !important;
+}
 
   .nav-item.hide-lg {
     display: none;

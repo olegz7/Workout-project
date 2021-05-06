@@ -1,5 +1,4 @@
-// const productsJson =
-// `[
+// const productsJson = `[
 //     {
 //         "id": "1",
 //         "title": "Adidas Cloudfoam Trainers",
@@ -30,7 +29,7 @@
 //         "image": "sale-nike-t-short.jpeg",
 //         "price": "23,00"
 //     }
-// ]`
+// ]`;
 
 // function renderProducts(products) {
 //     const productsContainer = document.querySelector(".sale-list");
