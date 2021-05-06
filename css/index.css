@@ -59,18 +59,41 @@ h2 {
   font-family: "PT Sans", sans-serif;
   color: var(--subheading);
   align-items: center;
-}
-.cart-symbol {
-  transform: scale(2);
+  margin: 10px auto;
 }
 
+.cart-blank {
+  visibility: hidden;
+}
 .cart-title {
   font-size: 14px;
 }
-
-.cart-total {
-  font-family: "PT Sans", sans-serif;
+.cart-quantity {
+  border: 1px solid;
 }
+
+.cart-total, .col-form-label {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+}
+
+.cart-total-text {
+  margin-right: 5px;
+}
+
+#button-close {
+  border: none;
+  background-color: var(--background-main);
+  margin: 0;
+  padding: 0;
+}
+
+.fa-window-close, 
+.fa-window-close:hover {
+  color: var(--background-navigation) !important;
+} 
+
+
 
 .header-menu {
   background-color: var(--background-navigation);
@@ -414,12 +437,23 @@ button {
   border-radius: 5px;
 }
 
-.buy {
+.card-title {
+  font-family: "PT Sans", sans-serif;
+  color: var(--subheading);
+  font-size: 1rem;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.btn-primary {
   background-color: var(--h1-span);
   border: solid 1px var(--h1-span);
 }
+.modal-content {
+  width: 600px;
+}
 
-.buy:hover {
+.btn-primary:hover {
   background-color: var(--background-navigation);
   color: var(--background-main);
   border: solid 1px var(--background-main);
