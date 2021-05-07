@@ -28,6 +28,7 @@
             </div>
         </div>
         
+        <!-- --- HEADER --- -->
         <div class="header-menu">
             <div class="header-container-block">
                 <div class="logo">
@@ -49,7 +50,7 @@
                                     <a class="nav-link active" href="#sale">Sale</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="#new-arrivals">Collection</a>
+                                    <a class="nav-link active" href="#sale">Collection</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link active" href="#contact-us">Contact us</a>
@@ -74,8 +75,8 @@
                 </nav>
                 <div class="cart-logo cart-fixed">
                     <a class="nav-link openCartLink" href="#modal-cart" data-bs-toggle="modal">
-                      <i class="fas fa-shopping-cart"></i>
-                        <span id="cart-badge" class="badge bg-dark"></span>
+                      <img src="img/cart.svg" id="cart-img" alt="Cart logo">
+                        <span id="cart-badge" class="badge"></span>
                     </a>
                 </div>
             </div>
@@ -170,7 +171,7 @@
             <div class="video text-left">
                 <p class="subheading">ASPIRE TO MORE</p>
                 <h2 class="heading">NEW FITNESS <br>COLLECTION</h2>
-                <a href="#new-arrivals" class="button">Shop now ➪</a>
+                <a href="#sale" class="button">Shop now ➪</a>
             </div>
         </div>
 
@@ -264,7 +265,7 @@
                         <br>MONTH</h2>
                     <p class="p-bigger-size">PUMA SPORTS BRA <span class="monthly-discount">$50</span> <del>70$</del></p>
                     <p class="p-bigger-size">Start your fitness story right away with this comfortable bra and get advantage of our discount.</p>
-                    <a href="#new-arrivals">More Details ➪</a>
+                    <a href="#sale">More Details ➪</a>
                     <div id="countdown" class="countdown">
                         <div class="time">
                             <h3 id="days">00</h3>
@@ -285,52 +286,6 @@
                     </div>
                 </div>
                 <div class="deal-of-month-img"></div>
-            </div>
-        </div>
-
-        <div id="new-arrivals" class="white">
-            <div class="container-block">
-                <div class="new-arrivals-block"> 
-                    <h2>NEW ARRIVALS</h2>
-                    <hr class="hr-short-grey">
-                    <p>Be the first to buy new items by leading brands.</p>
-                    <a href="#sale" class="button">More Products</a>
-                </div>
-                
-                <div class="new-arrivals-list"></div>
-                
-                <div class="new-arrivals-carousel">
-                    <div class="new-arrivals-item">
-                        <a href="#"><img src="img/puma-shoes.jpeg" alt="Puma Textile Running Shoes"></a>
-                        <a href="#">Puma Textile Running Shoes</a>
-                        <p class="price">$62,00USD</p>
-                        <button type="button">Add to Cart</button>
-                    </div>
-                    <div class="new-arrivals-item">
-                        <a href="#"><img src="img/nike-jacket.jpeg" alt="Nike Winter Jacket in Blue"></a>
-                        <a href="#">Nike Winter Jacket in Blue</a>
-                        <p class="price">$85,00USD</p>
-                        <button type="button">Add to Cart</button>
-                    </div>
-                    <div class="new-arrivals-item">
-                        <a href="#"><img src="img/adidas-trainers.jpeg" alt="Adidas Black Trainers"></a>
-                        <a href="#">Adidas Black Trainers</a>
-                        <p class="price">$60,00USD</p>
-                        <button type="button">Add to Cart</button>
-                    </div>
-                    <div class="new-arrivals-item">
-                        <a href="#"><img src="img/reebok-duster.jpeg" alt="Reebok Red Duster"></a>
-                        <a href="#">Reebok Red Duster</a>
-                        <p class="price">$60,00USD</p>
-                        <button type="button">Add to Cart</button>
-                    </div>
-                    <div class="new-arrivals-item">
-                        <a href="#"><img src="img/asics-jordan.jpeg" alt="Asics Jordan 2000"></a>
-                        <a href="#">Asics Jordan 2000</a>
-                        <p class="price">$200,00USD</p>
-                        <button type="button">Add to Cart</button>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -355,9 +310,9 @@
         <div class="white">
             <div class="container-block">
                 <div class="carousel-sm">
-                    <button class="carousel-sm-prev"><i class="fas fa-arrow-circle-left"></i></button>
+                    <button class="carousel-sm-prev" id="button-close"><i class="fas fa-arrow-circle-left"></i></button>
                     <img src="" alt="Carouselimage">
-                    <button class="carousel-sm-next"><i class="fas fa-arrow-circle-right"></i></button>
+                    <button class="carousel-sm-next" id="button-close"><i class="fas fa-arrow-circle-right"></i></button>
                 </div>
                 <div class="carousel-lg">
                     <div class="carousel-logos">
@@ -365,22 +320,13 @@
                         <img class="logo-2" src="" alt="Carousel image">
                         <img class="logo-3" src="" alt="Carousel image">
                     </div>
-                    <button class="carousel-lg-prev"><i class="fas fa-arrow-circle-left"></i></button>
-                    <button class="carousel-lg-next"><i class="fas fa-arrow-circle-right"></i></button>
+                    <button class="carousel-lg-prev" id="button-close"><i class="fas fa-arrow-circle-left"></i></button>
+                    <button class="carousel-lg-next" id="button-close"><i class="fas fa-arrow-circle-right"></i></button>
                 </div>
             </div>
         </div>
 
-       <!-- <div class="white">
-            <article class="blog">
-                <h2>BLOG</h2>
-                <hr>
-                <p>Read the latest articles from our experts.</p>
-
-            </article>
-        </div>
-
-        <div>
+        <!-- <div>
             <div class="subscribe">
                 <img src="img/subscribe-image.png" alt="Subscribe Image">
                 <p>10%  OFF YOUR FIRST ORDER. SIGN UP TO OUR NEWSLETTER TO GET THIS SPECIAL OFFER.</p>
@@ -428,7 +374,7 @@
                         <h4>NAVIGATION</h4>
                         <hr class="hr-red">
                         <a href="#about-us">About us</a>
-                        <a href="#new-arrivals">Collection</a>
+                        <a href="#sale">Collection</a>
                         <a href="#contact-us">Contacts</a>
                     </div>
                     <div class="navigation">
@@ -465,8 +411,8 @@
             <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="productInfoLabel">Product Info</h5>
-                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+                <button type="button" class="close" id="button-close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-window-close"></i></span>
                 </button>
             </div>
             <div class="modal-body">
@@ -482,7 +428,7 @@
         </div>
     </div>
       
-      <!-- Modal Cart -->
+    <!-- Modal Cart -->
     <div class="modal fade" id="modal-cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -520,23 +466,18 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     
-    <script src="js/countdown.js"></script>
-    <script src="js/products.js"></script>
-    <script src="js/carousel-sm.js"></script>
+    <script src="js/alert-window.js"></script>
     <script src="js/carousel-lg.js"></script>
+    <script src="js/carousel-sm.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyrCxNGRyq4mi99LwF2qp0K-cl298uDXY&callback=initMap&libraries=&v=weekly"
     async
     ></script>
-    <script src="js/map.js"></script>
-    
-    <script src="js/alert-window.js"></script>
-    <script src="js/products-service.js"></script>
-    <script src="js/cart.js"></script>
     <script src="js/product-list.js"></script>
-
-    <script src="js/new-arrivals-service.js"></script>
-    <script src="js/new-arrivals-list.js"></script>
-
+    <script src="js/products-service.js"></script>
+    
     <script src="js/index.js"></script>  
 </body>
 </html> 

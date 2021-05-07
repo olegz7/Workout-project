@@ -15,6 +15,8 @@
   --background-navigation: #222323;
   --h1-span: rgb(244, 1, 6);
   --subheading: rgba(34, 35, 35, 0.55);
+  --cart-color: rgb(240, 239, 239);
+  --cart-color2: #ffffff;
 }
 
 body {
@@ -36,13 +38,13 @@ h2 {
 /* --- HEADER --- */
 
 .cart-fixed {
-  color: var(--background-main);
   position: fixed;
+  width: 60px;
   top: 170px;
   right: 20px;
-  border: solid 1px var(--background-navigation);
-  background-color: var(--background-navigation);
-  border-radius: 10px;
+  background-color: var(--cart-color);
+  border: 1px solid var(--background-navigation) ;
+  border-radius: 50%;
   z-index: 1;
 }
 
@@ -62,6 +64,10 @@ h2 {
   margin: 10px auto;
 }
 
+.bg-dark {
+  background-color: var(--background-navigation) !important;
+}
+
 .cart-blank {
   visibility: hidden;
 }
@@ -70,6 +76,17 @@ h2 {
 }
 .cart-quantity {
   border: 1px solid;
+}
+
+.badge {
+  background-color: var(--h1-span);
+}
+
+
+#cart-badge {
+  border-radius: 50% !important;
+  position: absolute;
+  top: 0;
 }
 
 .cart-total, .col-form-label {
@@ -92,8 +109,6 @@ h2 {
 .fa-window-close:hover {
   color: var(--background-navigation) !important;
 } 
-
-
 
 .header-menu {
   background-color: var(--background-navigation);
@@ -151,8 +166,8 @@ h2 {
     font-size: 23px;
 }
 
-/* --- MAIN --- */
-/* BANNER */
+/* --- MAIN  --- */
+/*  */
 
 .container-block {
   max-width: 980px;
@@ -350,9 +365,6 @@ h4 {
   max-width: 600px;
 }
 
-.p-bigger-size {
-  font-size: 1.2rem;
-}
 
 i.fab, i.fas {
   color: var(--h1-span);
@@ -449,8 +461,8 @@ button {
   background-color: var(--h1-span);
   border: solid 1px var(--h1-span);
 }
-.modal-content {
-  width: 600px;
+.modal-dialog {
+  max-width: 700px;
 }
 
 .btn-primary:hover {
@@ -592,17 +604,38 @@ small {
   width: 270px;
 }
 
-.carousel-sm-prev, .carousel-lg-prev {
+.carousel-sm-prev {
   position: absolute;
-  top: 20px;
-  left: 0;
+  top: 60px;
+  left: 80px;
+  transform: scale(1.5);
 }
 
-.carousel-sm-next, .carousel-lg-next {
+.carousel-lg-prev {
   position: absolute;
-  top: 20px;
-  right: 0;
+  top: 60px;
+  left: -30px;
+  transform: scale(1.5);
 }
+
+.carousel-sm-next{
+  position: absolute;
+  top: 60px;
+  right: 80px;
+  transform: scale(1.5);
+}
+
+.carousel-lg-next {
+  position: absolute;
+  top: 60px;
+  right: -30px;
+  transform: scale(1.5);
+}
+
+.fa-arrow-circle-left, 
+.fa-arrow-circle-right:hover {
+  color: var(--h1-span) !important;
+} 
 
 .carousel-sm button, .carousel-lg button {
   color: var(--background-main);
@@ -877,6 +910,11 @@ footer a:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
+
+  .p-bigger-size {
+    font-size: 1.2rem;
+  }
+  
   /* VIDEO 980+ */
   .video {
     min-height: 1000px;

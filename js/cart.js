@@ -85,7 +85,7 @@ class Cart {
       const { count, cost } = await this.cartLengthAndCost();
       document.querySelector(
           "#cart-badge"
-      ).innerText = `${count} $${cost.toFixed(2)}`;
+      ).innerText = `${count}`;
   }
   async cartLengthAndCost() {
       // return Object.keys(this.cart).length;
