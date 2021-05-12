@@ -23,17 +23,19 @@ class Cart {
       for (const id in this.cart) {
           const product = await this.productService.getProductById(id);
           total += product.price * this.cart[id];
-          cartDomSting += `<div class="row cart-items" data-id="${id}"> 
-                    <div class="col-2">
-                        <img class="cart-img" src="img/${product.image}" alt="${product.title}">
-                    </div>
-                    <div class="col-5 cart-title">${product.title}</div>
-                    <div class="col-1">$${product.price}</div>
-                    <div class="col-1 cart-blank">blank</div>
-                    <div class="col-1 cart-symbol"><button data-id=${id} class="btn btn-sm minus">-</button></div>
-                    <div class="col-1 cart-quantity">${this.cart[id]}</div>
-                    <div class="col-1 cart-symbol"><button data-id=${id} class="btn btn-sm plus">+</button></div>
-                </div>`;
+          cartDomSting +=   `
+                            <div class="row cart-items" data-id="${id}"> 
+                                <div class="col-2">
+                                    <img class="cart-img" src="img/${product.image}" alt="${product.title}">
+                                </div>
+                                <div class="col-5 cart-title">${product.title}</div>
+                                <div class="col-1">$${product.price}</div>
+                                <div class="col-1 cart-blank">blank</div>
+                                <div class="col-1 cart-symbol"><button data-id=${id} class="btn btn-sm minus">-</button></div>
+                                <div class="col-1 cart-quantity">${this.cart[id]}</div>
+                                <div class="col-1 cart-symbol"><button data-id=${id} class="btn btn-sm plus">+</button></div>
+                            </div>
+                            `;
       }
       total = total.toFixed(2);
       cartDomSting += `
