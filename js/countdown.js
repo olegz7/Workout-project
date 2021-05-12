@@ -3,9 +3,7 @@ const hours = document.getElementById("hours");
 const minutes = document.getElementById("minutes");
 const seconds = document.getElementById("seconds");
 const countdown = document.getElementById("countdown");
-
 const currentYear = new Date().getFullYear();
-
 const endOfMonth = new Date(`June 01 ${currentYear} 00:00:00`);
 
 // Update countdown time
@@ -24,11 +22,6 @@ function updateCountdown() {
     minutes.innerHTML = m < 10 ? "0" + m : m;
     seconds.innerHTML = s < 10 ? "0" + s : s;
 }
-
-// Show spinner before countdown
-setTimeout(() => {
-    countdown.style.display = "flex";
-}, 1000);
 
 // Run every second
 setInterval(updateCountdown, 1000);

@@ -12,11 +12,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+  
 </head>
 
 <body>
+    <!-- --- HEADER --- -->
     <header >
-        <div class="header-extention">
+        <div class="header-extention" >
             <div class="header-container-block">
                 <div class="header-extention-text">
                     <p>We've extended our returns period to 30 days.</p>
@@ -27,93 +29,77 @@
                 </div>
             </div>
         </div>
-        
-        <!-- --- HEADER --- -->
-        <div class="header-menu">
+        <nav class="header-menu">
             <div class="header-container-block">
                 <div class="logo">
                     <a href="index.html">
                         <img src="img/workout-logo.jpg" alt="Workout Logo">
                     </a> 
                 </div>
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class= "navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#about-us">About us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="#sale">Sale</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="#sale">Collection</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="#contact-us">Contact us</a>
-                                </li>
-                                <li class="nav-item hide-lg">
-                                    <p class="p-bigger-size">We've extended our returns period to 30 days.</p>
-                                </li>
-                                <li class="nav-item hide-lg">
-                                    <a class="mail-to" href="mailto:workout@email.com">workout@email.com</a>
-                                </li>
-                                <li class="nav-item hide-lg">
-                                    <p>+1 (234) 567 89 00</p>
-                                </li>
-                            </ul>
-                            <div class="header-media">
-                                <a class="social-icon hvr-icon-pulse" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                <a class="social-icon" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                                <a class="social-icon" href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-                            </div>
+                <div>
+                    <div class="menu-icon">
+                        <span></span>
+                    </div>
+                    <div class="menu">
+                        <a href="#about-us" class="menu-link">About us</a>
+                        <a href="#sale" class="menu-link">Sale</a>
+                        <a href="#deal" class="menu-link">Deal of month</a>
+                        <a href="#contact-us" class="menu-link">Contact us</a>
+                        <div class="phone-number">
+                            <a href="tel:+1(234)5678900" class="menu-link">+1 (234) 567 89 00</a>
+                        </div>
+                        <div class="social-icons-block">
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
-                </nav>
-                <div class="cart-logo cart-fixed">
-                    <a class="nav-link openCartLink" href="#modal-cart" data-bs-toggle="modal">
-                      <img src="img/cart.svg" id="cart-img" alt="Cart logo">
-                        <span id="cart-badge" class="badge"></span>
-                    </a>
                 </div>
             </div>
-        </div>
+        </nav>
+        <div class="cart-fixed">
+            <a class="nav-link openCartLink" href="#modal-cart" data-bs-toggle="modal">
+              <img src="img/cart.svg" id="cart-img" alt="Cart logo">
+                <span id="cart-badge" class="badge"></span>
+            </a>
+        </div> 
     </header>
 
+    <!-- --- MAIN --- -->
     <main>
+        <!-- --- BANNER --- -->
         <div class="banner-high">
                     <p class="subheading">ASPIRE TO MORE</p>
                     <h1 class="heading">NEW <span class="red">COLLECTIONS</span>
                         <br>BY TOP BRANDS</h1>
                     <a href="#sale" class="button">Shop now ➪ </a>
-                
         </div>
-        <div class="white">
+
+        <!-- --- NEW ARRIVALS --- -->
+        <div>
             <div class="container-block">
                 <div class="collection-divisions">
-                    <div class="collection-item-wide">
+                    <section class="collection-item-wide">
                         <h2>NEW ARRIVALS</h2>
                         <hr class="hr-short-red" >
                         <a href="#sale">Shop Collection ➪</a>
-                    </div>
-                    <div class="collection-item-trainers">
+                    </section>
+                    <section class="collection-item-trainers">
                         <h2>TRAINERS</h2>
                         <hr class="hr-red">
                         <a href="#sale">Shop Collection ➪</a>
-                    </div>
-                    <div class="collection-item-hot-sale">
+                    </section>
+                    <section class="collection-item-hot-sale">
                         <h2>HOT SALE</h2>
                         <hr class="hr-red">
                         <a href="#sale">Shop Collection ➪</a>
-                    </div>
+                    </section>
                 </div>
             </div>
         </div>
 
-        <div class="white">
+        <!-- --- WHY US --- -->
+        <div>
             <div class="container-block">
                 <section class="why-us">
                     <h2>Why Choose Us</h2>
@@ -145,9 +131,9 @@
                     </article>
                 </div>
             </div>
-            
         </div>
-
+        
+        <!-- --- ABOUT US --- -->
         <div id="about-us">
                 <div class="about-us-block">
                     <div class="about-us-img">
@@ -158,7 +144,7 @@
                         <p class="p-bigger-size">Workout is an American fitness store created by fitness geeks for those who love sport and try to keep fit.</p>
                         <p>At Workout, we know that great results do not come from standing still. We all need to move, push boundaries, and achieve better results every day. The mission of our shop is to support you in this.</p>
                         <p>We're sure that everyday fitness can change your lives and bodies forever. And we keep selling comfortable and high-tech clothes and shoes for your outstanding results.</p>
-                        <div class="media">
+                        <div class="social-icons-block">
                             <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
                             <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
                             <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -167,14 +153,17 @@
                 </div>
         </div>
 
+        <!-- --- VIDEO --- -->
          <div>
             <div class="video text-left">
                 <p class="subheading">ASPIRE TO MORE</p>
-                <h2 class="heading">NEW FITNESS <br>COLLECTION</h2>
+                <h2 class="heading">NEW FITNESS 
+                    <br>COLLECTION</h2>
                 <a href="#sale" class="button">Shop now ➪</a>
             </div>
         </div>
 
+        <!-- --- SALE --- -->
         <div id="sale" class="white">
             <div class="container-block">
                 <section class="sale">
@@ -192,73 +181,44 @@
                 <div class="row products-container"></div>
                 <div class="row products-container2"></div>
             </div>
-            
         </div>
 
-
-        <!-- <div>
-                <div class="text-left">
-                    <img src="img/get-discount.png" alt="GET YOUR DISCONT" height="800">
+        <!-- --- DISCOUNT --- -->
+        <div>
+                <div class="discount-banner text-left">
                     <p class="subheading">SALE OF THE MONTH</p>
-                    <p class="heading">GET YOUR
-                        <br>DISCONT</p>
-                    <a href="#shop-now" class="button">Shop now ➪</a>
+                    <h2 class="heading">GET YOUR 
+                        <br>DISCONT</h2>
+                    <a href="#sale" class="button">Shop now ➪</a>
                 </div>
         </div>
 
-        <div class="white">
+        <!-- --- DISCOUNTS LIST --- -->
+        <div class="container-block">
             <div class="discounts-list">
-                <article class="discount">
-                    <img src="img/discount-t-shirt.jpeg" alt="Discount T-shirts" height="250">
-                    <h2>20% OFF ALL T-shirts</h2>
-                    <a href="#">Shop Collection ➪</a>
-                </article>
-                <article class="discount">
-                    <img src="img/discount-jackets.jpeg" alt="Discount Jackets" height="250">
-                    <h2>30% OFF ALL jackets</h2>
-                    <a href="#">Shop Collection ➪</a>
-                </article>
-                <article class="discount">
-                    <img src="img/discount-trainers.jpeg" alt="Discount Trainers" height="250">
-                    <h2>25% off all trainers</h2>
-                    <a href="#">Shop Collection ➪</a>
-                </article>
+                <div class="discount-t-shirt">
+                    <div class="discount-item">
+                        <h5>20% OFF ALL T-shirts</h5>
+                        <a href="#sale">Shop Collection ➪</a>
+                    </div>
+                </div>
+                <div class="discount-jacket">
+                    <div class="discount-item">
+                        <h5>30% OFF ALL jackets</h5>
+                        <a href="#sale">Shop Collection ➪</a>
+                    </div>   
+                </div>
+                <div class="discount-trainers">
+                    <div class="discount-item">
+                        <h5>25% off all trainers</h5>
+                        <a href="#sale">Shop Collection ➪</a>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <section id="collection">
-            <h2>MAIN COLLECTION</h2>
-            <hr>
-            <p>Shop our main fitness collection for men and women represented by the famous brands.</p>
-
-            <a id="women" href="#">Women</a>
-            <a id="men" href="#">Men</a>
-            <a id="shoes" href="#">Shoes</a>
-            <hr>
-
-            <div class="collection-list">
-                <div class="collection-item">
-                    <img src="img/puma-bra.jpeg" alt="Puma Sports Bra" height="350">
-                    <a href="#">Puma Sports Bra</a>
-                    <p class="price">$12,00USD</p>
-                    <button type="button">Add to Cart</button>
-                </div>
-                <div class="collection-item">
-                    <img src="img/reebok-top.jpeg" alt="Reebok Long Sleeve Top" height="350">
-                    <a href="#">Reebok Long Sleeve Top</a>
-                    <p class="price">$18,00USD</p>
-                    <button type="button">Add to Cart</button>
-                </div>
-                <div class="collection-item">
-                    <img src="img/quicksilver-top.jpeg" alt="Quicksilver Workout Top" height="350">
-                    <a href="#">Quicksilver Workout Top</a>
-                    <p class="price">$12,00USD</p>
-                    <button type="button">Add to Cart</button>
-                </div>
-            </div>
-        </section> -->
-
-        <div class="deal-of-month">
+        <!-- --- COUNTDOWN --- -->
+        <div class="deal-of-month" id="deal">
             <div class="deal-of-month-block">
                 <div class="deal-of-month-text">
                     <h2 class="heading">DEAL OF THE
@@ -289,55 +249,29 @@
             </div>
         </div>
 
-        <!-- <div>
-            <div class="text-right">
-                <img src="img/keep-comfort.jpec" alt="KEEP FIT WITH COMFORT">
-                <p class="subheading">100% ORIGINAL BRANDS</p>
-                <p class="heading">KEEP FIT WITH
-                    <br>COMFORT</p>
-                <table>
-                    <tr>
-                        <td>Top brands</td>
-                        <td>Delivery with DHL</td>
-                        <td>Easy returns</td>
-                    </tr>
-                </table>
-                <p>Workout offers fitness clothing and footwear for those who want to change their lives and bodies for better. We work only with the best sport brands to ensure that your training is really effective and comfortable.</p>
-                <a href="#about-us" class="button">Learn More ➪</a>
-            </div>
-        </div> -->
-
+        <!-- --- CAROUSEL --- -->
         <div class="white">
             <div class="container-block">
                 <div class="carousel-sm">
                     <button class="carousel-sm-prev" id="button-close"><i class="fas fa-arrow-circle-left"></i></button>
-                    <img src="" alt="Carouselimage">
+                    <div class="carousel-logo">
+                        <img src="" alt="Carouselimage">
+                    </div>
                     <button class="carousel-sm-next" id="button-close"><i class="fas fa-arrow-circle-right"></i></button>
                 </div>
                 <div class="carousel-lg">
+                    <button class="carousel-lg-prev" id="button-close"><i class="fas fa-arrow-circle-left"></i></button>
                     <div class="carousel-logos">
                         <img class="logo-1" src="" alt="Carousel image">
                         <img class="logo-2" src="" alt="Carousel image">
                         <img class="logo-3" src="" alt="Carousel image">
                     </div>
-                    <button class="carousel-lg-prev" id="button-close"><i class="fas fa-arrow-circle-left"></i></button>
                     <button class="carousel-lg-next" id="button-close"><i class="fas fa-arrow-circle-right"></i></button>
                 </div>
             </div>
         </div>
-
-        <!-- <div>
-            <div class="subscribe">
-                <img src="img/subscribe-image.png" alt="Subscribe Image">
-                <p>10%  OFF YOUR FIRST ORDER. SIGN UP TO OUR NEWSLETTER TO GET THIS SPECIAL OFFER.</p>
-                <form action="https://formspree.io/f/xbjqjzgj" method="POST">
-                    <label>
-                        <input type="email" name="user-email" placeholder="Your email adress" required>
-                    </label>
-                </form>
-            </div>
-        </div> -->
     
+        <!-- --- MAP --- -->
         <div id="contact-us">
             <div class="map-container">
                 <div id="map"></div>
@@ -360,6 +294,7 @@
         </div>
     </main> 
 
+    <!-- --- FOOTER --- -->
     <footer>
         <div class=footer-block>
             <div class="container-block">
@@ -385,10 +320,10 @@
                         <a href="#sale">Shoes</a>
                         <a href="#sale">Sale</a>
                     </div>
-                    <div class="navigation">
+                    <div>
                         <h4>FOLLOW US</h4>
                         <hr class="hr-red">
-                        <div class="media">
+                        <div class="social-icons-block">
                             <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
                             <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
                             <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -404,6 +339,7 @@
         </div>
     </footer>
 
+    <!-- ******************************* MODAL ELEMENTS ******************************* -->
 
     <!-- Modal Product Info -->
     <div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
@@ -462,11 +398,14 @@
         </div>
     </div>
 
+    <!-- Modal Alert -->
     <div class="alert-container"></div>
     
+    <!-- ******************************* Script Links ******************************* -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     
     <script src="js/alert-window.js"></script>
+    <script src="js/burger-menu.js"></script>
     <script src="js/carousel-lg.js"></script>
     <script src="js/carousel-sm.js"></script>
     <script src="js/cart.js"></script>
