@@ -1,4 +1,3 @@
-(function () {
 function showAlert(message, success = true) {
   const alertTemplate = `<div class="alert ${
       success ? "alert-success" : "alert-danger"
@@ -9,6 +8,5 @@ function showAlert(message, success = true) {
   document.querySelector(".alert-container").innerHTML += alertTemplate;
   const alertElement = document.querySelector(".alert");
   const bsAlert = new bootstrap.Alert(alertElement);
-  setTimeout(() => bsAlert.close(), 200);
+  setTimeout(() => bsAlert.close(), 500);
 }
-})();
