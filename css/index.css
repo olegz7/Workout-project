@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    /* removes dotes from list */
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -104,7 +103,7 @@ h2 {
     margin-right: 5px;
 }
 
-#button-close {
+.close {
     border: none;
     background-color: var(--background-main);
     margin: 0;
@@ -686,27 +685,9 @@ small {
     margin: 0 35px;
 }
 
-.carousel-sm-prev {
-    transform: scale(1.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel-sm-next {
-    transform: scale(1.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel-lg-prev {
-    transform: scale(1.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+.carousel-sm-prev,
+.carousel-sm-next, 
+.carousel-lg-prev,
 .carousel-lg-next {
     transform: scale(1.5);
     display: flex;
@@ -720,10 +701,10 @@ small {
 
 .carousel-sm button, .carousel-lg button {
     color: var(--background-main);
-    background-color: var(--background-navigation);
-    padding: 40px 0;
+    border: none;
+    background-color: var(--background-main);
+    padding: 0;
     margin: 0;
-    font-family: "PT Sans", sans-serif;
 }
 
 /* --- SUBSCRIBE --- */
